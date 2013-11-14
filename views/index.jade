@@ -1,0 +1,15 @@
+!!! 5
+html
+  head
+    title= title
+    script(src='http://code.jquery.com/jquery.min.js').
+    script(src='/js/lib/dropzone.js')
+  body
+    div(id='drop_area')
+      p Drag &
+      p Drop your
+      p Directory
+    form(action="/display", method="post", enctype="multipart/form-data")
+      input(type="file", name="displayImage")
+      input(type="submit", value="upload")
+    script(src='/js/dragdrop.js').
